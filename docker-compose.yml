@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  training-api:
+    container_name: sastraining-spa
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 3000:3000
+    
